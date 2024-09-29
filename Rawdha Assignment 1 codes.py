@@ -219,3 +219,73 @@ print("Room Rates: $", hotel_1.get_room_rates(), "per night")
 
  
 
+# Define the Payment class with attributes, constructor, and getters/setters
+class Payment:
+    # Constructor to initialize the Payment object with its attributes
+    def __init__(self, payment_method, amount, taxes_and_fees, transaction_id, payment_status):
+        self.payment_method = payment_method    # Public attribute for the payment method
+        self.amount = amount                    # Public attribute for the total amount
+        self.taxes_and_fees = taxes_and_fees    # Public attribute for taxes and fees
+        self.transaction_id = transaction_id    # Public attribute for the transaction ID
+        self.payment_status = payment_status    # Public attribute for the payment status
+
+    # Getter for payment method
+    def get_payment_method(self):
+        return self.payment_method
+
+    # Setter for payment method
+    def set_payment_method(self, payment_method):
+        self.payment_method = payment_method
+
+    # Getter for amount
+    def get_amount(self):
+        return self.amount
+
+    # Setter for amount
+    def set_amount(self, amount):
+        self.amount = amount
+
+    # Getter for taxes and fees
+    def get_taxes_and_fees(self):
+        return self.taxes_and_fees
+
+    # Setter for taxes and fees
+    def set_taxes_and_fees(self, taxes_and_fees):
+        self.taxes_and_fees = taxes_and_fees
+
+    # Getter for transaction ID
+    def get_transaction_id(self):
+        return self.transaction_id
+
+    # Setter for transaction ID
+    def set_transaction_id(self, transaction_id):
+        self.transaction_id = transaction_id
+
+    # Getter for payment status
+    def get_payment_status(self):
+        return self.payment_status
+
+    # Setter for payment status
+    def set_payment_status(self, payment_status):
+        self.payment_status = payment_status
+
+    # Other required function header - use a pass statement
+    # This function could be used to process the payment
+    def process_payment(self):
+        pass  # This function will process the payment
+
+    # This function could be used to validate payment details
+    def validate_payment(self):
+        pass  # This function will validate the payment information
+
+
+# Creating a Payment object with sample data
+payment_1 = Payment("Mastercard ending in 9904", 201.48, 21.58, "1234567890", "Success")
+
+# Displaying payment details using getters
+print("Payment Details:")
+print("Payment Method:", payment_1.get_payment_method())
+print("Amount: $", payment_1.get_amount())
+print("Taxes and Fees: $", payment_1.get_taxes_and_fees())
+print("Transaction ID:", payment_1.get_transaction_id())
+print("Payment Status:", payment_1.get_payment_status())
