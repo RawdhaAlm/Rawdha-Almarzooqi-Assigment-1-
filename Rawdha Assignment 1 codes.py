@@ -144,5 +144,78 @@ print("Room Type:", reservation_1.get_room_type())
 print("Total Cost: $", reservation_1.get_total_cost())
 
 
+
+
+# Define the Hotel class with attributes, constructor, and getters/setters
+class Hotel:
+    # Constructor to initialize the Hotel object with its attributes
+    def __init__(self, hotel_name, address, phone_number, available_rooms, room_rates):
+        self.hotel_name = hotel_name          # Public attribute for the hotel name
+        self.address = address                # Public attribute for the hotel address
+        self.phone_number = phone_number      # Public attribute for the phone number
+        self.available_rooms = available_rooms  # Public attribute for available rooms
+        self.room_rates = room_rates          # Public attribute for the room rates
+
+    # Getter for hotel name
+    def get_hotel_name(self):
+        return self.hotel_name
+
+    # Setter for hotel name
+    def set_hotel_name(self, hotel_name):
+        self.hotel_name = hotel_name
+
+    # Getter for address
+    def get_address(self):
+        return self.address
+
+    # Setter for address
+    def set_address(self, address):
+        self.address = address
+
+    # Getter for phone number
+    def get_phone_number(self):
+        return self.phone_number
+
+    # Setter for phone number
+    def set_phone_number(self, phone_number):
+        self.phone_number = phone_number
+
+    # Getter for available rooms
+    def get_available_rooms(self):
+        return self.available_rooms
+
+    # Setter for available rooms
+    def set_available_rooms(self, available_rooms):
+        self.available_rooms = available_rooms
+
+    # Getter for room rates
+    def get_room_rates(self):
+        return self.room_rates
+
+    # Setter for room rates
+    def set_room_rates(self, room_rates):
+        self.room_rates = room_rates
+
+    # Other required function header - use a pass statement
+    # This function could be used to check room availability
+    def check_availability(self):
+        pass  # This function will check if rooms are available
+
+    # This function could be used to manage room bookings
+    def manage_booking(self):
+        pass  # This function will handle room booking management
+
+
+# Creating a Hotel object with sample data
+hotel_1 = Hotel("Comfort Inn & Suites Los Alamos", "2455 Trinity Drive, Los Alamos, NM 87544", "505-661-1110", 50, 89.95)
+
+# Displaying hotel details using getters
+print("Hotel Details:")
+print("Hotel Name:", hotel_1.get_hotel_name())
+print("Address:", hotel_1.get_address())
+print("Phone Number:", hotel_1.get_phone_number())
+print("Available Rooms:", hotel_1.get_available_rooms())
+print("Room Rates: $", hotel_1.get_room_rates(), "per night")
+
  
 
